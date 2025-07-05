@@ -1,23 +1,23 @@
-# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+# Ignore all node_modules folders
+**/node_modules/
 
-# dependencies
-/node_modules
-/.pnp
-.pnp.js
+# Ignore build output
+**/dist/
+**/build/
 
-# testing
-/coverage
+# Ignore environment variables
+**/.env
+**/.env.local
 
-# production
-/build
+# Ignore logs
+**/logs
+**/*.log
 
-# misc
+# Ignore system files
 .DS_Store
-.env.local
-.env.development.local
-.env.test.local
-.env.production.local
+Thumbs.db
 
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
+# Ignore lock files (optional — only if you're okay without tracking them)
+# Uncomment only if needed
+# yarn.lock
+# package-lock.json
